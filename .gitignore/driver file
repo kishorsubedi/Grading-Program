@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+#include <iomanip>
+#include "studentType.h"
+using namespace std ;
+
+void header() ;
+
+int main()
+{
+  cout << fixed << showpoint ;
+  int no_of_students ;
+  cout << "How many students are there ? " << endl ;
+  cin >> no_of_students ;
+  studentType students[no_of_students] ;
+  
+  cout << setw(50) << "SCORE SHEET" << endl << endl ;
+  header() ;
+  for (int i =0; i< no_of_students ; i++)
+  {
+    students[i].print() ;
+  }
+  return 0;
+}
+
+void header()
+{
+  cout << "Name"<< "\t" << "Proposal"<< "\t" << "Problem" << "\t" << "Solution" << "\t" << "Conclusion" << "\t" << "Presentation" << "\t" << "Portfolio" << "\t" << "Newspaper empathy" << "  " << "ReadingResponse" << "  " << "Proposal_consid" << "\t" << "  " << "EAI" << "  "<< "Attendance" << "  " << "Participation" << "\t" << "SCORE"<< "\t" << "LETTER GRADE" << endl << endl;
+}
+
+
+
+
+
+
